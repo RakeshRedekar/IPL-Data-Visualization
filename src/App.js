@@ -4,6 +4,7 @@ import "./App.css";
 import MoM from "./MoM";
 import Player from "./Player";
 import Stadium from "./Stadium";
+import Sticker from "./Sticker";
 import store from "./store";
 import Toss from "./Toss";
 import WinChart from "./WinChart";
@@ -42,6 +43,9 @@ function App() {
         <div className="stadiumChart">
           <Stadium />
         </div>
+      </div>
+      <div className="stickerCompo">
+        <Sticker />
       </div>
     </div>
   );

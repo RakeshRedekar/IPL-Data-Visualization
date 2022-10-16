@@ -53,13 +53,18 @@
   padding: 20px;
 }
 
-.momImage{
+.momImage {
   margin: 10px;
   width: 22vw;
   height: 500px;
   padding: 0px;
+  border: 5px solid lightgray;
 }
-
+.stickerCompo {
+  position: fixed;
+  top: 500px;
+  right: 0px;
+}
 @media screen and (max-width: 1000px) {
   .stadiumChart,
   .tossChart,
