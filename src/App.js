@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./App.css";
+import Footer from "./Footer";
 import MoM from "./MoM";
 import Player from "./Player";
 import Stadium from "./Stadium";
 import Sticker from "./Sticker";
-import store from "./store";
 import Toss from "./Toss";
 import WinChart from "./WinChart";
 import Winner from "./Winner";
@@ -47,6 +47,7 @@ function App() {
       <div className="stickerCompo">
         <Sticker />
       </div>
+      <Footer />
     </div>
   );
 }

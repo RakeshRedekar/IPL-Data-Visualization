@@ -37,14 +37,3 @@ tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
-.OfferDetailImage > button {
-  background-color: #ff1493;
-  color: white;
-  border: none;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 22px;
-  border-radius: 5px;
-}

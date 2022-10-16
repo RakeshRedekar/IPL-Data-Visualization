@@ -5,7 +5,7 @@ function Sticker() {
   const [stickerStyle, setStyle] = useState({ display: "none" });
   const handleShow = () => {
     setStyle({
-      display: `${stickerStyle.display == "block" ? "none" : "block"}`,
+      display: `${stickerStyle.display === "block" ? "none" : "block"}`,
     });
   };
   let arr = Object.values(seasonWinners);
@@ -20,43 +20,20 @@ function Sticker() {
     }
   }
   arr = Object.keys(winnerData);
+  let sortedArr = arr.map((ele)=>{return {team:ele, matchesWon : winnerData[ele]}})
+  sortedArr.sort((a,b)=>b["matchesWon"]-a["matchesWon"])
 
-  function sortTable() {
-    var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("styleTable");
-    switching = true;
-    while (switching) {
-      switching = false;
-      rows = table.rows;
-      for (i = 0; i < rows.length - 1; i++) {
-        shouldSwitch = false;
-        x = rows[i].getElementsByTagName("td")[1];
-        y = rows[i + 1].getElementsByTagName("td")[1];
-        console.log("X==", x, "y==", y);
-        if (Number(x.innerHTML) < Number(y.innerHTML)) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-      if (shouldSwitch) {
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-      }
-    }
-  }
+console.log(sortedArr);
   return (
     <div className="sticker">
       <h2 onClick={handleShow}>-: Season Leaderboard :-</h2>
       <div style={stickerStyle} className="stickerContaint">
-        <div className="OfferDetailImage">
-          <button onClick={sortTable}>Sort</button>
-        </div>
         <table id="styleTable">
-          {arr.map((ele, index) => {
+          {sortedArr.map((ele, index) => {
             return (
               <tr key={index}>
-                <td>{ele}</td>
-                <td>{winnerData[ele]}</td>
+                <td>{ele["team"]}</td>
+                <td>{winnerData[ele["team"]]}</td>
               </tr>
             );
           })}

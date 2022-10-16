@@ -1,5 +1,5 @@
 import React from "react";
-import './toss.css'
+import "./toss.css";
 import {
   AccumulationChartComponent,
   AccumulationSeriesCollectionDirective,
@@ -10,8 +10,6 @@ import {
   PieSeries,
   AccumulationTooltip,
 } from "@syncfusion/ej2-react-charts";
-import { useDispatch, useSelector } from "react-redux";
-import store from "./store";
 import HOC from "./HOC";
 
 function Toss({ mainData }) {
@@ -20,14 +18,14 @@ function Toss({ mainData }) {
   for (let i = 0; i < mainData.length; i++) {
     let temp = mainData[i];
     if (
-      temp["toss_decision"] == "bat" &&
-      temp["toss_winner"] == temp["winner"]
+      temp["toss_decision"] === "bat" &&
+      temp["toss_winner"] === temp["winner"]
     ) {
       batWin++;
     }
     if (
-      temp["toss_decision"] == "field" &&
-      temp["toss_winner"] == temp["winner"]
+      temp["toss_decision"] === "field" &&
+      temp["toss_winner"] === temp["winner"]
     ) {
       fieldWin++;
     }
@@ -43,8 +41,8 @@ function Toss({ mainData }) {
         id="pieCharts"
         legendSettings={{ background: "white" }}
         tooltip={{ enable: true }}
-        height = {"80%"}
-        margin ={"0px"}
+        height={"80%"}
+        margin={"0px"}
       >
         <Inject
           services={[

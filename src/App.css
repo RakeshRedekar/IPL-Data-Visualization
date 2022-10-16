@@ -69,10 +69,15 @@
   .stadiumChart,
   .tossChart,
   .tri,
-  .WinChart {
+  .WinChart,
+  .momImage {
     width: 90vw;
+    overflow: scroll;
   }
   .appCharts {
     display: block;
+  }
+  .stadiumChart {
+    height: 400px;
   }
 }

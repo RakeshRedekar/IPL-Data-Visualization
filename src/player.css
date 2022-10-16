@@ -1,6 +1,6 @@
 .playerLink > img {
   margin: 0px;
-  width: 22vw;
+  width: 100%;
 }
 .playerH3 {
   font-family: "Segoe UI";
@@ -14,3 +14,18 @@
 .playerH3 > span {
   color: gray;
 }
+
+@media screen and (max-width: 1000px) {
+  .playerLink > img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .playerLink > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
