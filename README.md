@@ -1,6 +1,6 @@
 # IPL Data Visualization Application
 
-A Nice looking, user-friendly and fully responsive Dashboard for visualization of IPL data.
+A fully responsive and user-friendly Dashboard for visualization of IPL data.
 
 ## Major Libraries/Frameworks Used :
 
@@ -17,7 +17,7 @@ A Nice looking, user-friendly and fully responsive Dashboard for visualization o
 
 ## Extra Features :
 
-- Select the year to render data of perticular year.
+- Select the year to render data of particular year.
 - Clicking on picture of "Man of the Series" player will redirect you to player's Wikipedia profile.
 - Click on "Season Leaderboard" sticker to see the overall Leaderboard of all teams.
 
