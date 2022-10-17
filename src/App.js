@@ -10,15 +10,10 @@ import Toss from "./Toss";
 import WinChart from "./WinChart";
 import Winner from "./Winner";
 import Years from "./Years";
-
+import posts from "./InputData";
 function App() {
   let dispatch = useDispatch();
-
-  useEffect(() => {
-    fetch("http://localhost:8080/posts")
-      .then((data) => data.json())
-      .then((result) => dispatch({ type: "fetched", payload: result }));
-  }, []);
+  dispatch({ type: "fetched", payload: posts });
 
   return (
     <div className="App">

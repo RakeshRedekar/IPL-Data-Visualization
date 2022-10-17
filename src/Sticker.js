@@ -20,10 +20,10 @@ function Sticker() {
     }
   }
   arr = Object.keys(winnerData);
-  let sortedArr = arr.map((ele)=>{return {team:ele, matchesWon : winnerData[ele]}})
-  sortedArr.sort((a,b)=>b["matchesWon"]-a["matchesWon"])
-
-console.log(sortedArr);
+  let sortedArr = arr.map((ele) => {
+    return { team: ele, matchesWon: winnerData[ele] };
+  });
+  sortedArr.sort((a, b) => b["matchesWon"] - a["matchesWon"]);
   return (
     <div className="sticker">
       <h2 onClick={handleShow}>-: Season Leaderboard :-</h2>
