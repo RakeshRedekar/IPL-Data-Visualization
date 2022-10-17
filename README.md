@@ -27,3 +27,5 @@ A Nice looking, user-friendly and fully responsive Dashboard for visualization o
 - [Deployed Link](https://ipl-data-visualization-rakesh.netlify.app/) : https://ipl-data-visualization-rakesh.netlify.app/
 
 ## Screenshots :
+
+![image](https://user-images.githubusercontent.com/96696734/196104633-ced5857f-f025-4676-95ba-3047436cfd56.png)
