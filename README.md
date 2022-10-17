@@ -19,7 +19,7 @@ A Nice looking, user-friendly and fully responsive Dashboard for visualization o
 
 - Select the year to render data of perticular year.
 - Clicking on picture of "Man of the Series" player will redirect you to player's Wikipedia profile.
-- Click on "Series Leaderboard" sticker to see the overall Leaderboard of all teams.
+- Click on "Season Leaderboard" sticker to see the overall Leaderboard of all teams.
 
 ## 🔗 Links :
 
